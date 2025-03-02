@@ -4,26 +4,19 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2025/03/01/blog%E6%90%AD%E5%BB%BA/"/>
-      <url>/2025/03/01/blog%E6%90%AD%E5%BB%BA/</url>
+      <title>博客的搭建</title>
+      <link href="/2025/03/02/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+      <url>/2025/03/02/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
       
-        <content type="html"><![CDATA[<p>终于部署完成</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/02/27/hello-world/"/>
-      <url>/2025/02/27/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="折腾！！"><a href="#折腾！！" class="headerlink" title="折腾！！"></a>折腾！！</h1><p>学Java一年多了，还没有个自己的博客，每每被问起，都感觉面子上有些挂不住了，再一个，自己其实也偶尔写写随笔，只是没有发表出来，存在手机里了。随笔只是对于文学的追求，但其实对于技术上，有时候还真挺想分享一些有趣的观点，只是……我嫌麻烦。我也在CSDN上发表过一些博客，深深明白仅一两千字的文章就需要从早写到晚，再一个，也觉得如果是在自己的博客网站上发表，可能也没人能看到。总而言之，种种原因导致一直没有搭建一个自己的博客的想法。</p><p>但学东西就是在不断折腾，就是不停的麻烦，写博客对于自己的意义更大，就当是一个记录，也当是一个学习整个建站流程的机会。抱着这样的想法，我前几天开始了折腾！！</p><h1 id="没完没了"><a href="#没完没了" class="headerlink" title="没完没了"></a>没完没了</h1><p>首先是选一个合适的博客嘛，其实按照我的审美的话，我浏览过的那么多个博客还没几个合格的。可能是我要求太高了，框架啊主题啊看了一个又一个，总觉得这差一点那又差一点，而我觉得自己的需求又很简单：我不喜欢太花里胡哨的，简洁，舒适，最好带有一点书卷气。</p><p>历时3天，结局当然是以失败告终。不管那么多了，选了一个star挺多的主题就开建了。</p><p>虽说网上的教程不少，但是毕竟头一回这样去配置，踩了不少坑。</p><h2 id="文档有点紊乱"><a href="#文档有点紊乱" class="headerlink" title="文档有点紊乱"></a>文档有点紊乱</h2><p>首先就是网上的教程跟官方文档有些出入，完全跟着教程来，有些地方一直在报错。其次，就算是官方文档，很多地方可能是版本不同了，许多配置已经失效了，某一项的文档可能塞近20个组件，密密麻麻的代码和花花绿绿的注释和迷迷糊糊的配图，真的把我眼都看花了，怪不得看下方评论有那么多人吐槽文档做的不好。</p><h2 id="GitHub死活ping不通"><a href="#GitHub死活ping不通" class="headerlink" title="GitHub死活ping不通"></a>GitHub死活ping不通</h2><p>你知道吗，所有的相关教程都在说 hexo d这个操作如果失败了，就是网络问题，多试几次就好了，我试过校园网，校园网开代理，手机热点，开关代理，工作室WiFi，开关代理，所有的网络组合，基本都尝试过了，梯子从新加坡飞到德国，从哈萨克斯坦飞到墨西哥，您猜怎么着，就可以了那么一两次，而且再复制那个操作，无法复现(┬┬﹏┬┬)。就这样被硬控了一晚上，直到看到相关博客下有条评论，说看一下GitHub能不能ping通呗。真神奇，能访问，能正常git操作，就是无法ping通。然后查询在<a href="https://www.ipaddress.com/">https://www.ipaddress.com</a> 查GitHub的ip地址，在电脑一个host文件上配置，然后，所有的“网络问题”瞬间解决了。</p><h2 id="图床问题"><a href="#图床问题" class="headerlink" title="图床问题"></a>图床问题</h2><p>其实现在图床有很多种解决方案，考虑过用GitHub，仔细咨询了阿里的oss可能产生的费用，看了七牛云的免费额度。众里寻他千百度，蓦然回首，我还是考虑本地存储用相对路径吧www。</p><h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>过几天就利用碎片时间把云服务器装上部署，然后就不想折腾了，最近忙的焦头烂额，现在晚上12点，我还在工作室ƪ(˘⌣˘)ʃ</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
       
     </entry>
     
